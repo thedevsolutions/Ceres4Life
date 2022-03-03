@@ -33,7 +33,7 @@ export default function Header() {
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav ml-auto">
       <li class="nav-item active">
-        <Link to="#/" class="nav-link">Home</Link>
+        <Link to="/home" class="nav-link">Home</Link>
       </li>
       <li class="nav-item">
         <Link to="#/" class="nav-link">Consultation</Link>
