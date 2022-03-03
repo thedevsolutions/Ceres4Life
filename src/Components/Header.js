@@ -45,9 +45,9 @@ export default function Header() {
         <Link to="#/" class="nav-link">Contact Us</Link>
       </li>
       <li class="nav-item dropdown">
-        <Link to="" class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <a href="#/" class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           ENG
-        </Link>
+        </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
           <Link to="#/" class="dropdown-item">FR</Link>
           <Link to="#/" class="dropdown-item">IT</Link>
