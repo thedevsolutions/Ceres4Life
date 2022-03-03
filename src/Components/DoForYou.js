@@ -52,17 +52,15 @@ export default function DoForYou() {
           <div className="community-text pb-4">
             <h6>What we Do for you</h6>
             <p>
-              Pregnancy care is complicated and joyful. We want to help you make
-              this wonderful journey as pleasant as possible.
-              <br />
-              We give you access to your provider through video consultations or
-              direct messaging.
-              <br />
-              Also, when directed by your care team, we can provide you with
-              remote monitoring services directly from your home. <br />
-              Of course, you will always get plenty of health education
-              resources. You will need to register to sign-in the first time.{" "}
+            Pregnancy or being a new Mom is complicated and joyful. We want to help you make this wonderful journey as <br/> pleasant as possible. We connect you to your provider through video consultations or direct messaging. Also, when<br/> directed by your care team, we provide you with remote monitoring services directly from your home. Of course, you <br/>will always get plenty of health education resources.
             </p>
+          </div>
+          <div className="services-list">
+            <ul>
+              <li>1. Reproductive Help</li>
+              <li>2. Mental Health</li>
+              <li>3. Wellness & Coaching</li>
+            </ul>
           </div>
           <div className="d-block d-md-flex py-5 align-items-center justify-content-around">
             <div className="mb-3">

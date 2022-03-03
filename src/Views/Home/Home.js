@@ -5,6 +5,7 @@ import DoForYou from "../../Components/DoForYou";
 import Help from "../../Components/Help";
 import Committed from "../../Components/Committed";
 import ChatBot from "../../Components/ChatBot";
+import BlogsNews from "../../Components/BlogsNews";
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
       <Help />
       <Committed />
       <CommunityForum />
+      <BlogsNews/>
     </div>
   );
 }

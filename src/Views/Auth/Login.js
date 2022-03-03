@@ -1,7 +1,13 @@
 import React from "react";
-import {Link} from "react-router-dom"
+import {Link} from "react-router-dom";
+import {  Select } from "antd";
+const { Option } = Select;
 
 export default function Login() {
+
+  function handleChange(value) {
+    console.log(`selected ${value}`);
+  }
   return (
     <div className="container-fluid">
       <div className="row justify-content-center">
@@ -31,6 +37,16 @@ export default function Login() {
                     placeholder="Password"
                   />
                 </div>
+                <Select
+            defaultValue="Login as"
+            size="large"
+            style={{ width: '100%' , textAlign:"left"}}
+            onChange={handleChange}
+            className="mb-3"
+          >
+            <Option value="provider">Provider</Option>
+            <Option value="patient">Patient</Option>
+          </Select>
                 <p className="text-right"><a href="/forgot">Forgot Password?</a></p>
                 <div className="my-5">
                 <Link to="/home">
