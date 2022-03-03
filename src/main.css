@@ -1,0 +1,321 @@
+/* Login & Forgot */
+.login-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 100vh;
+}
+
+.password-texts h5 {
+  font: 30px poppinsB;
+  color: var(--blackK);
+}
+.password-texts p {
+  font: 18px poppins;
+  color: var(--blackK);
+}
+
+
+.chat-btn{
+  position: fixed;
+  top: 650px;
+  right: 50px;
+  z-index: 9999;
+}
+
+.chat-icon{
+  font-size: 14px;
+}
+
+/* Navabr */
+
+.navbar-nav li{
+  padding-right: 30px;
+}
+.navbar-nav li a{
+  color: white !important;
+  font: 16px right;
+}
+
+.bg-navbar{
+  background: #9BD9D9!important;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+.navbar{
+  background-color: #9BD9D9;
+}
+.dropdown-menu{
+  background-color: var(--primaryK);
+}
+
+.dropdown-item:hover{
+  color: var(--secondaryk) !important;
+}
+
+.navbar-toggler{
+  background-color: var(--primaryK);
+}
+
+.navbar-toggler-icon {
+  border-color: black;
+}
+
+
+/* Hero */
+.hero-text{
+  font: 90px million;
+  color: white;
+}
+
+/* Footer */
+
+.footer {
+  background-color: #72d3d3;
+}
+.footer-logo p {
+  font: 60px mainF;
+  color: var(--blackK);
+}
+
+.footer-logo h6 {
+  font: 35px poppinsSb;
+  color: var(--blackK);
+}
+.margin-footer{
+    margin-left: 200px;
+    margin-right: 200px;
+    padding-top: 60px;
+}
+.get{
+    margin-bottom: 50px;
+}
+.get h6{
+    font: 56px million;
+    color: var(--blackK);
+}
+
+.email-address h5{
+    margin-top: 20px;
+    font: 25px poppinsB;
+    color: black;
+}
+.email-address p{
+    margin-top: 10px;
+    font: 20px poppins;
+    color: black;
+}
+.social img{
+    height: 40px;
+}
+
+@media only screen and (max-width: 550px) {
+  .footer-img {
+    display: none;
+  }
+  .chat-btn{
+    display: none;
+  }
+  .btn-secondary{
+      width: 100%;
+  }
+  .hero-text{
+    font: 50px million;
+    padding-left: 0px !important;
+  }
+  .hero-btn{
+    padding-left: 0px !important;
+  }
+  .card{
+    height: 300px;
+    width: 330px !important;
+    border-radius: 20px;
+  }
+  .pre-content h6{
+    font: 50px million !important;
+    color: #3B5998 !important;
+  }
+  .pre-content p{
+    font: 16px poppins !important;
+    color: var(--blackK) !important;
+  }
+  .post-content h6{
+    font: 50px million !important;
+    color: #3B5998 !important;
+  }
+  .post-content p{
+    font: 16px poppins !important;
+    color: var(--blackK) !important;
+  }
+  .community-text h6{
+    font: 40px million !important;
+    color: white;
+    text-align: center;
+}
+}
+
+
+/* Do For You */
+
+.card{
+  height: 300px;
+  width: 350px;
+  border-radius: 20px;
+  transition: transform .2s;
+}
+.card:hover{
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.left-card{
+  background-image: url("/public/images/left-do.svg");
+  background-position: center;
+}
+.right-card{
+  background-image: url("/public/images/right-do.svg");
+  background-position: center;
+}
+
+.card-text{
+  padding: 80px;
+  font: 26px poppinsMd;
+  color: var(--blackK);
+}
+
+
+
+/* Help */
+
+.text-pink{
+  color: var(--secondaryK);
+  font: 30px poppinsB;
+}
+
+.list ul li{
+  font: 22px poppins;
+  color: var(--blackK);
+  padding-bottom: 10px;
+}
+
+/* Committed */
+.committed-text{
+  font: 23px poppins;
+  color: var(--blackK);
+}
+
+/* Community Forum */
+
+.community-text h6{
+    font: 60px million;
+    color: white;
+    text-align: center;
+}
+
+.community-text p{
+    font: 18px poppins;
+    text-align: center;
+}
+
+.right-img{
+    position: absolute;
+    top: 20px;
+    right: 0px;
+}
+.left-img{
+  position: absolute;
+  top: 20px;
+  left: 0px;
+  transform: rotate(180deg);
+}
+.top-img{
+  position: absolute;
+  top: -54px;
+  right: 55px;
+  transform: rotate(270deg);
+}
+
+/* Request a Chat Modal */
+
+.request-modal .ant-modal-close{
+  display: none;
+}
+
+.ant-modal-body{
+padding: 0px !important;
+}
+.ant-modal-content{
+  border-radius: 0px 20px !important;
+}
+
+.modal-head{
+  padding: 30px 20px;
+  text-align: center;
+}
+.modal-head h6{
+  font: 20px right;
+  color: white;
+  padding-bottom: 10px;
+}
+.modal-head p{
+  font: 15px poppins;
+  color: var(--blackK);
+}
+.modal-content{
+  padding: 30px;
+}
+
+.ant-modal-footer{
+  display: none;
+}
+
+.consultation{
+  text-align: center;
+}
+.consultation h5{
+  font: 24px right;
+}
+
+/* Prenatal */
+
+.prenatal{
+  background-image: url("/public/images/Prenatal.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.pre-content h6{
+  font: 70px million;
+  color: #3B5998 !important;
+}
+.pre-content p{
+  font: 20px poppins;
+  color: var(--blackK) !important;
+}
+
+/* Postnatal */
+
+.postnatal{
+  background-image: url("/public/images/Postnatal.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.post-content h6{
+  font: 70px million;
+  color: #3B5998 !important;
+}
+.post-content p{
+  font: 20px poppins;
+  color: var(--blackK) !important;
+}
