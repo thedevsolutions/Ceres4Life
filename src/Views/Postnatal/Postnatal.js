@@ -3,6 +3,10 @@ import Committed from "../../Components/Committed";
 import CommunityForum from "../../Components/CommunityForum";
 
 export default function Postnatal() {
+
+  React.useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <>
       <div className="container-fluid px-0">

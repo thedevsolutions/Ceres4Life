@@ -37,6 +37,10 @@
   color: white !important;
   font: 16px right;
 }
+.navbar-nav li a:hover{
+  color: var(--secondaryK) !important;
+  font: 16px right;
+}
 
 .bg-navbar{
   background: #9BD9D9!important;
@@ -59,6 +63,22 @@
 
 .navbar-toggler-icon {
   border-color: black;
+}
+
+
+.language{
+  border: none;
+  background-color: transparent;
+  color: white !important;
+  font: 16px right;
+  margin-top: 7px;
+}
+select option{
+font: 12px poppins;
+padding: 20px;
+}
+select{
+  border: none;
 }
 
 
@@ -135,6 +155,10 @@
     font: 50px million !important;
     color: #3B5998 !important;
   }
+  .contact-content h6{
+    font: 50px million !important;
+    color: #3B5998 !important;
+  }
   .pre-content p{
     font: 16px poppins !important;
     color: var(--blackK) !important;
@@ -152,6 +176,9 @@
     color: white;
     text-align: center;
 }
+.services-list ul{
+  flex-direction: column !important;
+}
 }
 
 
@@ -167,14 +194,22 @@
   transform: scale(1.1);
   cursor: pointer;
 }
+.pre-post{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
 
 .left-card{
   background-image: url("/public/images/left-do.svg");
   background-position: center;
+  margin: 0 auto;
 }
 .right-card{
   background-image: url("/public/images/right-do.svg");
   background-position: center;
+  margin: 0 auto;
 }
 
 .card-text{
@@ -338,12 +373,95 @@ padding: 0px !important;
   color: var(--blackK) !important;
 }
 
+/* Contact Us */
+
+.contact{
+  background-image: url("/public/images/contact.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.contact-content h6{
+  font: 70px million;
+  color: white !important;
+}
+.contact-content p{
+  font: 20px poppins;
+  color: #808080 !important;
+}
+
+.contact-form h6{
+  font: 35px right;
+  color: var(--blackK);
+}
+.contact-form p{
+  font: 18px poppins;
+  color: #808080;
+}
+
+/* News */
+
+.news{
+  background-image: url("/public/images/Prenatal.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.news-content h6{
+  font: 70px million;
+  color: white !important;
+}
+.news-content p{
+  font: 20px poppins;
+  color: var(--blackK) !important;
+}
+
+
+
+/* Consultation */
+
+.consultation{
+  background-image: url("/public/images/Postnatal.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.consultation-content h6{
+  font: 70px million;
+  color: white !important;
+}
+.consultation-content p{
+  font: 20px poppins;
+  color: var(--blackK) !important;
+}
+
+
 /* Blogs / News */
 
 .blog-card{
   width: 300px;
   border-radius:20px ;
   background-color: white;
+  transition: transform .2s;
+}
+.blog-card:hover{
+  transform: scale(1.1);
+  cursor: pointer;
 }
 .blog-card-img{
 width: 300px;

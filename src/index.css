@@ -4,8 +4,12 @@
   --blackK: #151515;
   --blueK: #0D8DD2;
 }
+*:focus{ outline: #72D3D3; }
 body{
   background-color: #9BD9D9 !important;
+}
+textarea {
+  resize: none !important;
 }
 .bg-sea{
   background-color: #9BD9D9 !important;

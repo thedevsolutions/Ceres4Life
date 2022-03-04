@@ -8,10 +8,13 @@ import Prenatal from "./Views/Prenatal/Prenatal";
 import Postnatal from "./Views/Postnatal/Postnatal";
 import Header from "./Components/Header";
 import Footer from "./Components/Footer";
+import ContactUs from "./Views/ContactUs/ContactUs";
+import News from "./Views/News/News";
+import Consultation from "./Views/Consultation/Consultation";
 
 export default function Routes() {
   return (
-    <Switch>
+       <Switch>
       <Route path="/" exact component={Login} />
       <Route path="/forgot" component={ForgotPassword} />
       <Route path="/new-pass" component={NewPassword} />
@@ -20,6 +23,9 @@ export default function Routes() {
         <Route path="/home" exact component={Home} />
         <Route path="/prenatal" component={Prenatal} />
         <Route path="/postnatal" component={Postnatal} />
+        <Route path="/contact" component={ContactUs} />
+        <Route path="/news" component={News} />
+        <Route path="/consultation" component={Consultation} />
         <Footer />
       </div>
     </Switch>

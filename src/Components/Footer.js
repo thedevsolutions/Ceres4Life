@@ -1,4 +1,5 @@
 import React from "react";
+import {Link} from "react-router-dom";
 
 export default function Footer() {
   return (
@@ -11,7 +12,9 @@ export default function Footer() {
               <h6>Health Portal</h6>
             </div>
             <div className="my-4">
+              <Link to="/consultation">
               <button class="btn btn-secondary">Book A Consultation</button>
+              </Link>
             </div>
           </div>
         </div>

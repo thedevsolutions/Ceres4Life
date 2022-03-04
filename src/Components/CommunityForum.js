@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import {Link} from 'react-router-dom';
 
 export default function CommunityForum() {
   return (
@@ -17,7 +18,9 @@ export default function CommunityForum() {
              <img src="/images/community-img.svg" alt="community" className="img-fluid" />
            </div>
            <div>
+           <Link to="/consultation">
            <button className="btn btn-secondary">Schedule consultation</button>
+           </Link>
            </div>
          </div>
          </div>

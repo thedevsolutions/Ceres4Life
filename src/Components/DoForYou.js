@@ -62,7 +62,7 @@ export default function DoForYou() {
               <li>3. Wellness & Coaching</li>
             </ul>
           </div>
-          <div className="d-block d-md-flex py-5 align-items-center justify-content-around">
+          <div className="d-block d-md-flex py-5 pre-post">
             <div className="mb-3">
              <Link to="/prenatal">
              <div className="card left-card">
@@ -85,9 +85,6 @@ export default function DoForYou() {
                   alt="what-do"
                   height={"300px"}
                 />
-              </div>
-              <div className="text-center pt-5">
-                <button className="btn btn-blue w-100">Ask a question</button>
               </div>
             </div>
             <div className="mb-3">
@@ -150,7 +147,7 @@ export default function DoForYou() {
               class="form-control"
               id="exampleFormControlTextarea1"
               placeholder="How can we help?"
-              rows="5"
+              style={{height:"150px"}}
             ></textarea>
           </div>
           <button class="btn btn-primary w-100">SEND A MESSAGE</button>
@@ -198,7 +195,7 @@ export default function DoForYou() {
               class="form-control"
               id="exampleFormControlTextarea1"
               placeholder="Describe your concern"
-              rows="5"
+              style={{height:"150px"}}
             ></textarea>
           </div>
           <button class="btn btn-primary w-100">SCHEDULE</button>
