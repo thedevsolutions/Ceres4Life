@@ -3,6 +3,8 @@
   --secondaryK: #BB5C7C;
   --blackK: #151515;
   --blueK: #0D8DD2;
+  --offcanvas-width: 270px;
+  --topNavbarHeight: 56px;
 }
 *:focus{ outline: #72D3D3; }
 body{
@@ -182,3 +184,37 @@ outline: 1px solid var(--blueK);
   color: var(--secondaryK);
 }
 
+
+
+.sidebar-nav {
+  width: var(--offcanvas-width);
+}
+.sidebar-link {
+  display: flex;
+  align-items: center;
+}
+.sidebar-link .right-icon {
+  display: inline-flex;
+}
+.sidebar-link[aria-expanded="true"] .right-icon {
+  transform: rotate(180deg);
+}
+@media (min-width: 992px) {
+  body {
+    overflow: auto !important;
+  }
+  main {
+    margin-left: var(--offcanvas-width);
+  }
+  /* this is to remove the backdrop */
+  .offcanvas-backdrop::before {
+    display: none;
+  }
+  .sidebar-nav {
+    -webkit-transform: none;
+    transform: none;
+    visibility: visible !important;
+    height: calc(100% - var(--topNavbarHeight));
+    top: var(--topNavbarHeight);
+  }
+}

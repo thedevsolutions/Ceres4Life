@@ -11,16 +11,18 @@ import Footer from "./Components/Footer";
 import ContactUs from "./Views/ContactUs/ContactUs";
 import News from "./Views/News/News";
 import Consultation from "./Views/Consultation/Consultation";
+// import Dashboard from "./Dashboard/Dashboard";
 
 export default function Routes() {
   return (
-       <Switch>
-      <Route path="/" exact component={Login} />
+    <Switch>
+      <Route path="/login" exact component={Login} />
       <Route path="/forgot" component={ForgotPassword} />
       <Route path="/new-pass" component={NewPassword} />
+      {/* <Route path="/dashboard" component={Dashboard} /> */}
       <div>
         <Header />
-        <Route path="/home" exact component={Home} />
+        <Route path="/" exact component={Home} />
         <Route path="/prenatal" component={Prenatal} />
         <Route path="/postnatal" component={Postnatal} />
         <Route path="/contact" component={ContactUs} />

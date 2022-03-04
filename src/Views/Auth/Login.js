@@ -49,7 +49,7 @@ export default function Login() {
           </Select>
                 <p className="text-right"><Link to="/forgot">Forgot Password?</Link></p>
                 <div className="my-5">
-                <Link to="/home">
+                <Link to="/login">
                 <button class="btn btn-primary w-100">Login</button>
                 </Link>
                 </div>

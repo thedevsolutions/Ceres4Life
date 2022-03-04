@@ -70,6 +70,11 @@ export default function Header() {
             </Link>
           </li>
           <li class="nav-item">
+            <Link to="/login" class="nav-link">
+              Login
+            </Link>
+          </li>
+          <li class="nav-item">
             <select
               class="language"
               id="exampleFormControlSelect1"
