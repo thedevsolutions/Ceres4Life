@@ -32,7 +32,7 @@ export default function Header() {
           : "navbar navbar-dark sticky-top navbar-expand-lg px-5"
       }
     >
-      <Link to="/home" class="navbar-brand">
+      <Link to="/" class="navbar-brand">
         <img src="/images/Logo.svg" alt="logo" height={"60px"} />
       </Link>
       <button
@@ -50,7 +50,7 @@ export default function Header() {
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item active">
-            <Link to="/home" class="nav-link">
+            <Link to="/" class="nav-link">
               Home
             </Link>
           </li>
@@ -86,9 +86,6 @@ export default function Header() {
               </option>
               <option value="fr" class="dropdown-item">
                 French
-              </option>
-              <option value="de" class="dropdown-item">
-                Deutsch
               </option>
             </select>
           </li>

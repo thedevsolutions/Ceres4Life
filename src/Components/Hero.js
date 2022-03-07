@@ -1,4 +1,5 @@
 import React from "react";
+import {Link} from "react-router-dom";
 
 export default function Hero() {
   return (
@@ -11,7 +12,9 @@ export default function Hero() {
             Gateway
           </h1>
          <div className="hero-btn pl-5 my-5">
+         <Link to="/consultation">
          <button className="btn btn-secondary">Schedule consultation</button>
+           </Link>
          </div>
         </div>
         <div className="col-lg-4 px-0">

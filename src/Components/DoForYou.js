@@ -57,7 +57,7 @@ export default function DoForYou() {
           </div>
           <div className="services-list">
             <ul>
-              <li>1. Reproductive Help</li>
+              <li>1. Reproductive Health</li>
               <li>2. Mental Health</li>
               <li>3. Wellness & Coaching</li>
             </ul>
@@ -157,7 +157,7 @@ export default function DoForYou() {
         </div>
       </Modal>
       <Modal visible={isModalOVisible} onOk={handleOOk} onCancel={handleOCancel}>
-       <div className="consultation py-5">
+       <div className="text-center pt-5 pb-2">
            <h5>REQUEST A CONSULTATION</h5>
        </div>
        <div className="consultation-fields">
@@ -200,7 +200,7 @@ export default function DoForYou() {
           </div>
           <button class="btn btn-primary w-100">SCHEDULE</button>
          <div className="text-center py-3">
-         <a href="#/" onClick={handleCancel}>Cancel</a>
+         <a href="#/" onClick={handleOCancel}>Cancel</a>
          </div>
         </div>
        </div>

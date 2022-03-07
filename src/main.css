@@ -316,11 +316,14 @@ padding: 0px !important;
 }
 .modal-content{
   padding: 30px;
+  border: none !important;
 }
 
 .ant-modal-footer{
   display: none;
 }
+
+
 
 .consultation{
   text-align: center;
@@ -454,7 +457,7 @@ padding: 0px !important;
 /* Blogs / News */
 
 .blog-card{
-  width: 300px;
+  width: 270px;
   border-radius:20px ;
   background-color: white;
   transition: transform .2s;
@@ -464,7 +467,7 @@ padding: 0px !important;
   cursor: pointer;
 }
 .blog-card-img{
-width: 300px;
+width: 270px;
 height: 185px;
 border-radius: 20px;
 }

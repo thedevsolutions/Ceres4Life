@@ -31,7 +31,7 @@ export default function NewPassword() {
                     />
                   </div>
                   <div className="my-5">
-                    <Link to="/">
+                    <Link to="/login">
                       <button class="btn btn-primary w-100">
                         Change Password
                       </button>

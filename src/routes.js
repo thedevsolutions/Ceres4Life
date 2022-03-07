@@ -11,7 +11,7 @@ import Footer from "./Components/Footer";
 import ContactUs from "./Views/ContactUs/ContactUs";
 import News from "./Views/News/News";
 import Consultation from "./Views/Consultation/Consultation";
-// import Dashboard from "./Dashboard/Dashboard";
+import Dashboard from "./Dashboard/Dashboard";
 
 export default function Routes() {
   return (
@@ -19,7 +19,7 @@ export default function Routes() {
       <Route path="/login" exact component={Login} />
       <Route path="/forgot" component={ForgotPassword} />
       <Route path="/new-pass" component={NewPassword} />
-      {/* <Route path="/dashboard" component={Dashboard} /> */}
+      <Route path="/dashboard" component={Dashboard} />
       <div>
         <Header />
         <Route path="/" exact component={Home} />
