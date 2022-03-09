@@ -2,12 +2,12 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 
 export default function Header() {
-  const change = (option) => {
-    localStorage.setItem("lang", option.target.value);
-    window.location.reload();
-  };
+  // const change = (option) => {
+  //   localStorage.setItem("lang", option.target.value);
+  //   window.location.reload();
+  // };
 
-  const lang = localStorage.getItem("lang") || "en";
+  // const lang = localStorage.getItem("lang") || "en";
 
   useEffect(() => {
     changeNavbarColor();
@@ -78,14 +78,17 @@ export default function Header() {
             <select
               class="language"
               id="exampleFormControlSelect1"
-              onChange={change}
-              value={lang}
+              // onChange={change}
+              // value={lang}
             >
               <option value="en" class="dropdown-item">
                 English
               </option>
               <option value="fr" class="dropdown-item">
                 French
+              </option>
+              <option value="sp" class="dropdown-item">
+                Spanish
               </option>
             </select>
           </li>

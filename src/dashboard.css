@@ -56,3 +56,13 @@ line-height: 0px !important;
 .ant-radio-inner:after {
   background-color: #72D3D3 !important;
 }
+
+.consultation-drop .ant-select:not(.ant-select-customize-input) .ant-select-selector {
+  background-color: transparent;
+  border: none;
+}
+
+
+
+
+
