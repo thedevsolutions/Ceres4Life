@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { Select } from "antd";
 const { Option } = Select;
 
-export default function Login() {
+export default function Signup() {
   function handleChange(value) {
     console.log(`selected ${value}`);
   }
@@ -18,14 +18,30 @@ export default function Login() {
                   <img src="/images/logo.svg" alt="logo" height={"150px"} />
                 </div>
                 <div className="password-texts">
-                  <h5>Welcome Back !</h5>
-                  <p>Please Login to continue</p>
+                  <h5>Welcome!</h5>
+                  <p>Please Create an account to continue</p>
                 </div>
               </div>
               <div className="row mt-5">
                 <div className="col-lg-12">
-                <label>Email Address</label>
                   <div class="form-group">
+                    <label>First Name</label>
+                    <input
+                      type="email"
+                      class="form-control"
+                      placeholder="Enter firstname"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label>Last Name</label>
+                    <input
+                      type="password"
+                      class="form-control"
+                      placeholder="Enter lastname"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label>Email Address</label>
                     <input
                       type="email"
                       class="form-control"
@@ -33,17 +49,17 @@ export default function Login() {
                     />
                   </div>
                   <div class="form-group">
-                  <label>Password</label>
+                    <label>Password</label>
                     <input
                       type="password"
                       class="form-control"
-                      placeholder="Password"
+                      placeholder="Enter password"
                     />
                   </div>
                   <div className="as">
-                  <label>Login As</label>
+                    <label>Signup As</label>
                     <Select
-                      defaultValue="Login as"
+                      defaultValue="I am"
                       size="large"
                       style={{ width: "100%", textAlign: "left" }}
                       onChange={handleChange}
@@ -53,12 +69,11 @@ export default function Login() {
                       <Option value="patient">Patient</Option>
                     </Select>
                   </div>
-                  <p className="text-right">
-                    <Link to="/forgot">Forgot Password?</Link>
-                  </p>
                   <div className="my-5">
                     <Link to="/dashboard">
-                      <button class="btn btn-primary w-100">Login</button>
+                      <button class="btn btn-primary w-100">
+                        Create Account
+                      </button>
                     </Link>
                   </div>
                 </div>

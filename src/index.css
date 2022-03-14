@@ -107,7 +107,7 @@ outline: 1px solid var(--blueK);
 .btn-primary{
   background-color: var(--primaryK);
   border-radius: 5px;
-  font: 24px right;
+  font: 18px right;
   color: white;
   border: none !important;
   height: 50px;
@@ -182,4 +182,9 @@ outline: 1px solid var(--blueK);
   background-color: white;
   border: 2px solid var(--secondaryK) !important;
   color: var(--secondaryK);
+}
+
+
+label{
+  font-weight: 700;
 }

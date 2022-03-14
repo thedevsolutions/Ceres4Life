@@ -1,6 +1,5 @@
 import React from "react";
-import { Input, Menu, Dropdown } from "antd";
-const { Search } = Input;
+import { Menu, Dropdown } from "antd";
 
 const menu = (
   <Menu>
@@ -13,19 +12,9 @@ const menu = (
 );
 
 export default function DHeader() {
-  const onSearch = (value) => console.log(value);
-
   return (
     <div className="d-flex align-items-center justify-content-between h-100">
-      <div className="search">
-        <Search
-          placeholder="Search"
-          allowClear
-          onSearch={onSearch}
-          style={{ width: 300, background: "transparent", border: "none" }}
-          size="large"
-        />
-      </div>
+     <h6 className="d-welcome">Welcome</h6>
 
       <Dropdown overlay={menu}>
         <a

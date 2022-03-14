@@ -1,44 +1,44 @@
-import React, { useState } from "react";
+import React from "react";
 import {Link} from "react-router-dom";
-import { Modal, Select } from "antd";
-const { Option } = Select;
+// import { Modal, Select } from "antd";
+// const { Option } = Select;
 
 export default function DoForYou() {
-  function handleChange(value) {
-    console.log(`selected ${value}`);
-  }
+  // function handleChange(value) {
+  //   console.log(`selected ${value}`);
+  // }
 
-  const [isModalVisible, setIsModalVisible] = useState(false);
+  // const [isModalVisible, setIsModalVisible] = useState(false);
 
-  const showModal = () => {
-    setIsModalVisible(true);
-  };
-
-
-  const handleOk = () => {
-    setIsModalVisible(false);
-  };
-
-  const handleCancel = () => {
-    setIsModalVisible(false);
-  };
+  // const showModal = () => {
+  //   setIsModalVisible(true);
+  // };
 
 
+  // const handleOk = () => {
+  //   setIsModalVisible(false);
+  // };
 
-  const [isModalOVisible, setIsModalOVisible] = useState(false);
-
-  const showModalO = () => {
-    setIsModalOVisible(true);
-  };
+  // const handleCancel = () => {
+  //   setIsModalVisible(false);
+  // };
 
 
-  const handleOOk = () => {
-    setIsModalOVisible(false);
-  };
 
-  const handleOCancel = () => {
-    setIsModalOVisible(false);
-  };
+  // const [isModalOVisible, setIsModalOVisible] = useState(false);
+
+  // const showModalO = () => {
+  //   setIsModalOVisible(true);
+  // };
+
+
+  // const handleOOk = () => {
+  //   setIsModalOVisible(false);
+  // };
+
+  // const handleOCancel = () => {
+  //   setIsModalOVisible(false);
+  // };
 
 
   return (
@@ -72,11 +72,11 @@ export default function DoForYou() {
                 </div>
               </div>
              </Link>
-              <div className="text-center pt-5">
+              {/* <div className="text-center pt-5">
                 <button className="btn btn-secondary w-100" onClick={showModalO}>
                   Online consultation
                 </button>
-              </div>
+              </div> */}
             </div>
             <div className="mb-3">
               <div className="text-center">
@@ -100,16 +100,16 @@ export default function DoForYou() {
                 </div>
               </div>
              </Link>
-              <div className="text-center pt-5">
+              {/* <div className="text-center pt-5">
                 <button className="btn btn-golden w-100" onClick={showModal}>
                   Request a chat
                 </button>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
       </div>
-      <Modal visible={isModalVisible} onOk={handleOk} onCancel={handleCancel} className="request-modal">
+      {/* <Modal visible={isModalVisible} onOk={handleOk} onCancel={handleCancel} className="request-modal">
         <div className="bg-pink">
           <div className="modal-head">
             <h6>HOW CAN WE HELP YOU ?</h6>
@@ -155,8 +155,8 @@ export default function DoForYou() {
          <a href="#/" onClick={handleCancel}>Cancel</a>
          </div>
         </div>
-      </Modal>
-      <Modal visible={isModalOVisible} onOk={handleOOk} onCancel={handleOCancel}>
+      </Modal> */}
+      {/* <Modal visible={isModalOVisible} onOk={handleOOk} onCancel={handleOCancel}>
        <div className="text-center pt-5 pb-2">
            <h5>REQUEST A CONSULTATION</h5>
        </div>
@@ -204,7 +204,7 @@ export default function DoForYou() {
          </div>
         </div>
        </div>
-      </Modal>
+      </Modal> */}
       </div>
     </div>
   );

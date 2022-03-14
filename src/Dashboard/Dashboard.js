@@ -6,12 +6,10 @@ import { Layout, Menu } from "antd";
 import PUserProfile from "./PatientContents/PUserProfile";
 import PConsultation from "./PatientContents/PConsultation";
 import PMedications from "./PatientContents/PMedications";
-import PLabs from "./PatientContents/PLabs";
 import PAllergies from "./PatientContents/PAllergies";
 import PImmunization from "./PatientContents/PImmunization";
 import PImages from "./PatientContents/PImages";
 import PDrMessage from "./PatientContents/PDrMessage";
-import PHealth from "./PatientContents/PHealth";
 import PRemote from "./PatientContents/PRemote";
 
 import {
@@ -21,17 +19,16 @@ import {
   MergeCellsOutlined,
   AlertOutlined,
   ExperimentOutlined,
-  PictureOutlined,
   FileDoneOutlined,
-  HeartOutlined,
   LaptopOutlined,
+  DisconnectOutlined,
 
 } from "@ant-design/icons";
+import PReports from "./PatientContents/PReports";
 const { Header, Content, Sider } = Layout;
 
 export default function Dashboard() {
 
-  
   const [sideCollapsed, setSideCollapsed] = useState(false);
   const collapsed = sideCollapsed;
   const width = window.innerWidth;
@@ -66,7 +63,7 @@ console.log(width)
         case 2:
         return <PMedications />
         case 3:
-        return <PLabs />
+        return <PReports />
         case 4:
         return <PAllergies />
         case 5:
@@ -76,8 +73,6 @@ console.log(width)
         case 7:
         return <PDrMessage />
         case 8:
-        return <PHealth />
-        case 9:
           return <PRemote />
       default:
         break;
@@ -108,11 +103,11 @@ console.log(width)
             <Menu.Item key="2" icon={<ReconciliationOutlined />} onClick={() => setFragment(1)}>
               Consultations
             </Menu.Item>
-            <Menu.Item key="3" icon={<MedicineBoxOutlined />} onClick={() => setFragment(2)}>
+            <Menu.Item key="3" icon={<DisconnectOutlined />} onClick={() => setFragment(2)}>
               Medications
             </Menu.Item>
             <Menu.Item key="4" icon={<MergeCellsOutlined />}  onClick={() => setFragment(3)}>
-              Labs
+              Reports
             </Menu.Item>
             <Menu.Item key="5" icon={<AlertOutlined />}  onClick={() => setFragment(4)}>
               Allergies
@@ -120,17 +115,14 @@ console.log(width)
             <Menu.Item key="6" icon={<ExperimentOutlined />}  onClick={() => setFragment(5)}>
               Immunizations
             </Menu.Item>
-            <Menu.Item key="7" icon={<PictureOutlined />}  onClick={() => setFragment(6)}>
-              Images
+            <Menu.Item key="7" icon={<MedicineBoxOutlined />}  onClick={() => setFragment(6)}>
+              Available Doctors
             </Menu.Item>
             <Menu.Item key="8" icon={<FileDoneOutlined />}  onClick={() => setFragment(7)}>
               Doctor's Message
             </Menu.Item>
-            <Menu.Item key="9" icon={<HeartOutlined />}  onClick={() => setFragment(8)}>
-              Health Tips
-            </Menu.Item>
-            <Menu.Item key="10" icon={<LaptopOutlined />}  onClick={() => setFragment(9)}>
-              Remote Monitioring
+            <Menu.Item key="10" icon={<LaptopOutlined />}  onClick={() => setFragment(8)}>
+              RHM
             </Menu.Item>
           </Menu>
         </Sider>

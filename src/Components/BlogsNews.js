@@ -64,7 +64,7 @@ export default function BlogsNews(props) {
         <div className="row mx-0 justify-content-center py-5">
           <div className="col-lg-10">
             <div className="community-text pb-4">
-              <h6>Blogs / News</h6>
+              <h6>Health News</h6>
             </div>
            <div className="my-5">
            <Carousel

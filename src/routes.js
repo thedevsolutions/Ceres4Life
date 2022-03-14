@@ -12,11 +12,13 @@ import ContactUs from "./Views/ContactUs/ContactUs";
 import News from "./Views/News/News";
 import Consultation from "./Views/Consultation/Consultation";
 import Dashboard from "./Dashboard/Dashboard";
+import Signup from "./Views/Auth/Signup";
 
 export default function Routes() {
   return (
     <Switch>
       <Route path="/login" exact component={Login} />
+      <Route path="/signup" exact component={Signup} />
       <Route path="/forgot" component={ForgotPassword} />
       <Route path="/new-pass" component={NewPassword} />
       <Route path="/dashboard" component={Dashboard} />

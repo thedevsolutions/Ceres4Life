@@ -7,27 +7,31 @@ export default function NewPassword() {
         <div className="col-lg-4">
           <div className="login-card">
             <div className="w-100">
-              <div className="logo">
+             <div className="text-center">
+             <div className="logo">
                 <img src="/images/logo.svg" alt="logo" height={"150px"} />
               </div>
               <div className="password-texts">
                 <h5>New Password</h5>
                 <p>Please enter password to setup your account.</p>
               </div>
+             </div>
               <div className="row mt-5">
                 <div className="col-lg-12">
                   <div class="form-group">
+                    <label>New Password</label>
                     <input
                       type="password"
                       class="form-control"
-                      placeholder="New password"
+                      placeholder="Enter new password"
                     />
                   </div>
                   <div class="form-group">
+                    <label>Confirm New Password</label>
                     <input
                       type="password"
                       class="form-control"
-                      placeholder="Confirm new password"
+                      placeholder="Enter password again"
                     />
                   </div>
                   <div className="my-5">

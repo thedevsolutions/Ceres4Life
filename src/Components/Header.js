@@ -33,7 +33,7 @@ export default function Header() {
       }
     >
       <Link to="/" class="navbar-brand">
-        <img src="/images/Logo.svg" alt="logo" height={"60px"} />
+        <img src="/images/Logo.svg" alt="logo" height={"100px"} />
       </Link>
       <button
         class="navbar-toggler"
