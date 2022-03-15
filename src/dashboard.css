@@ -10,76 +10,84 @@
 }
 .profile img {
   height: 100%;
-  width: 100%; 
+  width: 100%;
   border-radius: 50%;
   object-fit: cover;
 }
 .ant-layout-header {
-line-height: 0px !important;
+  line-height: 0px !important;
 }
 
-.dashboard-head{
+.dashboard-head {
   font: 24px right;
 }
 
-
 .ant-menu:not(.ant-menu-horizontal) .ant-menu-item-selected {
-    background-color: #72d3d33d !important;
+  background-color: #72d3d33d !important;
 }
-.ant-menu-item-selected, .ant-menu-item-selected a, .ant-menu-item-selected a:hover {
-    color: #72D3D3 !important;
-    font-weight: 500 !important;
-}
-
-.ant-menu-inline .ant-menu-item:after, .ant-menu-vertical-left .ant-menu-item:after, .ant-menu-vertical-right .ant-menu-item:after, .ant-menu-vertical .ant-menu-item:after {
-    border-right: 3px solid #72D3D3 !important;
+.ant-menu-item-selected,
+.ant-menu-item-selected a,
+.ant-menu-item-selected a:hover {
+  color: #72d3d3 !important;
+  font-weight: 500 !important;
 }
 
-.ant-menu-light .ant-menu-item:hover{
-    color: #72D3D3 !important;
+.ant-menu-inline .ant-menu-item:after,
+.ant-menu-vertical-left .ant-menu-item:after,
+.ant-menu-vertical-right .ant-menu-item:after,
+.ant-menu-vertical .ant-menu-item:after {
+  border-right: 3px solid #72d3d3 !important;
 }
 
-.ant-form-item-label>label{
+.ant-menu-light .ant-menu-item:hover {
+  color: #72d3d3 !important;
+}
+
+.ant-form-item-label > label {
   font-weight: 600 !important;
 }
 
 .ant-radio-checked .ant-radio-inner {
-  border-color: #72D3D3 !important;
+  border-color: #72d3d3 !important;
 }
 
 .ant-radio-inner:after {
-  background-color: #72D3D3 !important;
+  background-color: #72d3d3 !important;
 }
 
-.consultation-drop .ant-select:not(.ant-select-customize-input) .ant-select-selector {
+.consultation-drop
+  .ant-select:not(.ant-select-customize-input)
+  .ant-select-selector {
   background-color: white !important;
 }
 
-.consultation-drop .ant-select:not(.ant-select-customize-input) .ant-select-selector {
+.consultation-drop
+  .ant-select:not(.ant-select-customize-input)
+  .ant-select-selector {
   padding-top: 0px !important;
 }
-
 
 .ant-select:not(.ant-select-customize-input) .ant-select-selector {
   border: none;
   text-align: left;
-  background-color: #F3F3F3 !important;
+  background-color: #f3f3f3 !important;
   border-radius: 5px !important;
   padding-top: 5px !important;
 }
 
-.ant-select-single.ant-select-lg:not(.ant-select-customize-input) .ant-select-selector {
+.ant-select-single.ant-select-lg:not(.ant-select-customize-input)
+  .ant-select-selector {
   height: 50px !important;
 }
 
-.d-welcome{
+.d-welcome {
   font: 18px poppins;
   color: var(--primaryK);
   font-weight: 700;
 }
 
-.consultations .table thead{
-  background:var(--primaryK);
+.consultations .table thead {
+  background: var(--primaryK);
   box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.15);
   border-radius: 10px !important;
   padding: 5px;
@@ -91,14 +99,14 @@ line-height: 0px !important;
   border-top: 0px;
   border-bottom: 0px;
 }
-.consultations .table{
+.consultations .table {
   margin-bottom: 0px !important;
   border-collapse: separate;
-  border-spacing:0 10px;
+  border-spacing: 0 10px;
 }
 
-.consultations .table tbody tr{
-  background: #FFFFFF !important;
+.consultations .table tbody tr {
+  background: #ffffff !important;
   box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.15) !important;
   border-radius: 7px !important;
   padding: 10px 15px !important;
@@ -106,15 +114,176 @@ line-height: 0px !important;
   text-align: center;
 }
 
-
 /* Reports */
 
-.add-card{
+.add-card {
   padding: 20px;
   background-color: white;
   border-radius: 20px;
 }
-.add-card input{
+.add-card input {
   text-align: center;
   height: 50px;
+}
+
+.uploaded-reports {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.uploaded-allergies {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.uploaded-allergies .upload-card {
+  padding: 20px 30px;
+  background: rgba(255, 255, 255, 0.4);
+  box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+}
+
+.uploaded-reports .upload-card {
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.4);
+  box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+}
+.uploaded-reports .upload-card img {
+  height: 200px;
+  width: 250px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+/* Doctors Available */
+
+.filters {
+  background: #ffffff;
+  box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+  padding: 20px;
+  transition: transform .2s;
+}
+.filters-f {
+  background: #ffffff;
+  box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+  padding: 20px;
+}
+.filters:hover{
+  transform: scale(0.9);
+  cursor: pointer;
+}
+.filter-head {
+  font: 14px right;
+  color: #151515;
+  text-align: center;
+}
+.d-filters h6 {
+  font: 12px poppinsMd;
+  font-weight: 700;
+}
+
+.ant-checkbox + span {
+  padding-right: 8px;
+  padding-left: 8px;
+  font: 12px poppins;
+}
+
+.ant-checkbox-checked .ant-checkbox-inner {
+  background-color: var(--primaryK) !important;
+  border-color: var(--primaryK) !important;
+}
+
+.ant-checkbox-inner {
+  border-radius: 4px !important;
+}
+
+.vertical .ant-checkbox-group {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+
+.doctors-head {
+  margin-bottom: 10px;
+}
+.doctors-head h6 {
+  font: 20px poppins;
+  font-weight: 600;
+  color: var(--primaryK);
+}
+
+.d-profile-img {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  position: relative;
+}
+.d-profile-img .online{
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  background-color: #27AE60;
+  position: absolute;
+  top: 20px;
+  right: 13px;
+}
+.d-profile-img img {
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.d-profile-description h5 {
+  font: 18px poppinsB;
+  font-weight: 700;
+}
+.d-profile-description h6 {
+  font: 15px poppinsMd;
+  font-weight: 500;
+  color: #333333;
+  padding-top: 5px;
+}
+.d-profile-description p {
+  font: 15px poppinsMd;
+  font-weight: 500;
+  color: #121f3e66;
+  padding-top: 5px;
+}
+.d-profile-description p:last-child{
+  font: 13px poppinsMd;
+  font-weight: 500;
+  color: var(--primaryK);
+}
+
+.px-10{
+  padding-left: 63px;
+  padding-right: 63px;
+}
+
+.down-arrow{
+  animation: MoveUpDown 1.5s linear infinite;
+  position: relative;
+  left: 0%;
+  top: 0;
+}
+
+@keyframes MoveUpDown {
+  0%, 100% {
+    top: 0;
+  }
+  50% {
+    top: 10px;
+  }
+}
+
+
+.scroll{
+  height: 73vh;
+  overflow-y: scroll;
 }

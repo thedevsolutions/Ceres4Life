@@ -96,7 +96,7 @@ export default function DoForYou() {
                     alt="right-card"
                     height={"80px"}
                   />
-                  <p className="card-text">I'm new Mom</p>
+                  <p className="card-text">I'm a new Mom</p>
                 </div>
               </div>
              </Link>

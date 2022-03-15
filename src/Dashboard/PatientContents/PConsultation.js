@@ -13,7 +13,7 @@ export default function PConsultation() {
       <div className="row justify-content-center">
         <div className="col-lg-10">
           <div className="d-flex align-items-center justify-content-between">
-            <h6 className="dashboard-head">Completed Consultation</h6>
+            <h6 className="dashboard-head">Consultation</h6>
             <div className="consultation-drop">
               <Select
                 defaultValue="Completed"

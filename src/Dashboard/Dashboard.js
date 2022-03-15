@@ -8,7 +8,7 @@ import PConsultation from "./PatientContents/PConsultation";
 import PMedications from "./PatientContents/PMedications";
 import PAllergies from "./PatientContents/PAllergies";
 import PImmunization from "./PatientContents/PImmunization";
-import PImages from "./PatientContents/PImages";
+import PADoctors from "./PatientContents/PADoctors";
 import PDrMessage from "./PatientContents/PDrMessage";
 import PRemote from "./PatientContents/PRemote";
 
@@ -69,7 +69,7 @@ console.log(width)
         case 5:
         return <PImmunization />
         case 6:
-        return <PImages />
+        return <PADoctors />
         case 7:
         return <PDrMessage />
         case 8:

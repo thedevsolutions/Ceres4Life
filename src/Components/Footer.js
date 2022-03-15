@@ -4,6 +4,11 @@ import {Link} from "react-router-dom";
 export default function Footer() {
   return (
     <div className="container-fluid">
+      <div className="row justify-content-center">
+        <div className="col-lg-6">
+          <h6>Hello</h6>
+        </div>
+      </div>
       <div className="row justify-content-center align-items-center pt-5">
         <div className="col-lg-5">
           <div className="my-5">
