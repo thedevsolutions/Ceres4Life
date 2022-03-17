@@ -6,7 +6,9 @@ export default function Footer() {
     <div className="container-fluid">
       <div className="row justify-content-center">
         <div className="col-lg-6">
-          <h6>Hello</h6>
+          <div className="text-center py-4">
+          <h5 className="text-blue">This is not a certified clinic we are just connecting patients and  providers into 1 platform</h5>
+          </div>
         </div>
       </div>
       <div className="row justify-content-center align-items-center pt-5">

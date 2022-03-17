@@ -20,8 +20,8 @@ export default function PConsultation() {
                 style={{ width: 120 }}
                 onChange={handleChange}
               >
-                <Option value="audio">Pending</Option>
                 <Option value="video">Completed</Option>
+                <Option value="audio">Pending</Option>
               </Select>
             </div>
           </div>

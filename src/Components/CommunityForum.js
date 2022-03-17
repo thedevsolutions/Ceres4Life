@@ -13,8 +13,8 @@ export default function CommunityForum() {
              <h6>Community Forum</h6>
              <p>This forum allows women who are already registered to communicate with <br/>each other, share and learn from their journeys, ask specific questions or <br/> just get moral support from others.   </p>
              </div>
-             <div className="d-block d-md-flex py-5 align-items-center justify-content-around">
-           <div>
+             <div className="d-block d-md-flex py-5 align-items-center justify-content-center">
+           <div className=' mr-5'>
              <img src="/images/community-img.svg" alt="community" className="img-fluid" />
            </div>
            <div>

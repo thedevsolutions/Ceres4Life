@@ -7,15 +7,19 @@
   --topNavbarHeight: 56px;
 }
 
+.text-blue{
+  color: var(--blueK);
+}
+
 ::-webkit-scrollbar{
   width: 10px;
 }
 ::-webkit-scrollbar-thumb{
-  background:linear-gradient(var(--secondaryK),transparent);
+  background:linear-gradient(var(--secondaryK),var(--blueK));
   border-radius: 6px;
 }
 ::-webkit-scrollbar-thumb:hover{
-  background:linear-gradient(transparent, var(--blueK));
+  background:linear-gradient(var(--blueK),var(--secondaryK));
 }
 
 *:focus{ outline: #72D3D3; }

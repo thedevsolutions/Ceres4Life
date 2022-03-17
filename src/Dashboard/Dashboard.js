@@ -130,7 +130,7 @@ console.log(width)
           <Header className="bg-white" style={{ padding: "0px 20px" }}>
             <DHeader />
           </Header>
-          <Content style={{ margin: "20px 0" }}>
+          <Content style={{ margin: "0 0" }}>
             <div className="px-5 py-3">
             {loadFragment()}
               </div>

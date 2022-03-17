@@ -287,3 +287,142 @@
   height: 73vh;
   overflow-y: scroll;
 }
+
+/* Chat */
+
+.chat-o-profile{
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+}
+.chat-o-profile img{
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.audio-call{
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background-color: #f7f7f7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform .2s;
+}
+.audio-call:hover{
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.single-chat-profile{
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+}
+.single-chat-profile img{
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.single-chat a{
+  text-decoration: none !important;
+  color: var(--blueK) !important;
+}
+.single-chat{
+  transition: transform .2s;
+}
+.single-chat:hover{
+  transform: scale(1.1);
+  cursor: pointer;
+}
+.single-chat-name{
+ font: 15px right;
+ color: #151515; 
+}
+.single-chat-msg{
+  font: 12px poppins;
+  color: #151515; 
+ }
+
+ .single-chat-time{
+   font: 10px poppins;
+   color: var(--blueK);
+ }
+
+ .chat-header{
+   padding: 7px 20px;
+ }
+
+ .chat.ant-layout-sider{
+   min-width: 350px !important;
+   border-right: 1px solid #d5d5d5;
+   height: 85vh !important;
+ }
+
+ .msg-recieve{
+  width: max-content;
+   background-color: #EAEAEA;
+   border-radius: 5px;
+   padding: 10px 20px;
+   text-align: center;
+   margin-bottom: 10px;
+ }
+ .msg-recieve p{
+   font: 16px poppins;
+ }
+ .msg-send p{
+  font: 16px poppins;
+}
+ .msg-send{
+  width: max-content;
+   background-color: #72D3D3;
+   border-radius: 5px;
+   padding: 10px 20px;
+   text-align: center;
+   margin-bottom: 10px;
+ }
+ .msgs-send{
+   display: flex;
+   align-items: center;
+   justify-content: flex-end;
+ }
+
+ .emojis{
+   height: 50px;
+   width: 50px;
+   background-color: #EAEAEA;
+   border-radius: 5px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   font-size: 25px;
+ }
+.send{
+  height: 50px;
+  width: 100px;
+  background-color: var(--primaryK);
+  border-radius: 5px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+}
+
+.type-msg input{
+  min-width: 680px !important;
+  height: 50px;
+  border-radius: 5px !important;
+  border: 1px solid #808080;
+}
+
+
+.chat-content .scroll{
+  height: 65vh !important;
+  overflow-y: scroll;
+}
