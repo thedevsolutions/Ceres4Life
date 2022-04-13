@@ -19,7 +19,7 @@ export default function CommunityForum() {
            </div>
            <div>
            <Link to="/consultation">
-           <button className="btn btn-secondary">Schedule consultation</button>
+           <button className="btn btn-secondary">Request a consultation</button>
            </Link>
            </div>
          </div>

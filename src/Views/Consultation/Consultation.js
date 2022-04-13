@@ -11,6 +11,7 @@ export default function Consultation() {
     function handleChange(value) {
         console.log(`selected ${value}`);
       }
+      
   return (
     <>
       <div className="container-fluid px-0">

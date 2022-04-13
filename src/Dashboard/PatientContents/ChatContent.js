@@ -82,9 +82,9 @@ export default function ChatContent() {
             </div>
           </div>
          <div className="d-flex align-items-center">
-            <div className="send">
+            <button type="button" className="btn btn-send px-5">
               <FiSend />
-            </div>
+            </button>
          </div>
           </div>
         </div>

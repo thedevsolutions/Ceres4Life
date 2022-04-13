@@ -134,6 +134,23 @@ outline: 1px solid var(--blueK);
   color: var(--primaryK);
 }
 
+.btn-send{
+  background-color: var(--primaryK);
+  border-radius: 5px;
+  font: 16px right;
+  color: white;
+  border: 2px solid var(--primaryK) !important;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.btn-send:hover{
+  background-color: white;
+  border: 2px solid var(--primaryK) !important;
+  color: var(--primaryK);
+}
+
 .btn-secondary{
   background-color: var(--secondaryK);
   border-radius: 5px;
