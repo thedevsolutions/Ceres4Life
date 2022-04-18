@@ -1,53 +1,62 @@
 :root {
-  --primaryK: #72D3D3;
-  --secondaryK: #BB5C7C;
+  --primaryK: #72d3d3;
+  --secondaryK: #bb5c7c;
   --blackK: #151515;
-  --blueK: #0D8DD2;
+  --blueK: #0d8dd2;
   --offcanvas-width: 270px;
   --topNavbarHeight: 56px;
 }
 
-.text-blue{
+.text-blue {
   color: var(--blueK);
 }
 
-::-webkit-scrollbar{
+::-webkit-scrollbar {
   width: 10px;
 }
-::-webkit-scrollbar-thumb{
-  background:linear-gradient(var(--secondaryK),var(--blueK));
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(var(--secondaryK), var(--blueK));
   border-radius: 6px;
 }
-::-webkit-scrollbar-thumb:hover{
-  background:linear-gradient(var(--blueK),var(--secondaryK));
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(var(--blueK), var(--secondaryK));
 }
 
-*:focus{ outline: #72D3D3; }
-body{
-  background-color: #9BD9D9 !important;
+*:focus {
+  outline: #72d3d3;
+}
+body {
+  background-color: #9bd9d9 !important;
 }
 textarea {
   resize: none !important;
 }
-.bg-sea{
-  background-color: #9BD9D9 !important;
+.bg-sea {
+  background-color: #9bd9d9 !important;
 }
-.bg-pink{
+.bg-pink {
   background-color: var(--secondaryK) !important;
 }
-h1,h2,h3,h4,h5,h6,p{
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
   margin-bottom: 0px !important;
 }
-::placeholder{
+::placeholder {
   font: 14px poppins;
   color: #808080;
 }
-a{
-  color: var(--blueK) !important;
+a {
+  color: var(--blackK) !important;
+  text-decoration: none !important;
 }
-a:hover{
-  color: var(--secondaryK) !important;
-  text-decoration: underline !important;
+a:hover {
+  color: var(--primaryK) !important;
+  /* text-decoration: underline !important; */
 }
 
 /* adding fonts */
@@ -80,47 +89,46 @@ a:hover{
   src: url(assets/fonts/Millions\ Journey\ Script\ Demo.ttf);
 }
 
-.form-control{
+.form-control {
   height: 50px;
   border: none;
-  background-color: #F3F3F3;
+  background-color: #f3f3f3;
   border-radius: 5px;
 }
 
-textarea:hover, 
-textarea:active, 
-textarea:focus, 
+textarea:hover,
+textarea:active,
+textarea:focus,
 button:focus,
 button:active,
 button:hover,
 label:focus,
 .btn:active,
-.btn.active
-{
-    outline:none !important;
-    -webkit-appearance:none;
-    box-shadow: none !important;
+.btn.active {
+  outline: none !important;
+  -webkit-appearance: none;
+  box-shadow: none !important;
 }
 
-textarea:hover, 
-textarea:active, 
-textarea:focus{
+textarea:hover,
+textarea:active,
+textarea:focus {
   outline: 1px solid var(--blueK) !important;
-  -webkit-appearance:none !important;
+  -webkit-appearance: none !important;
 }
 input:hover,
 input:active,
-input:focus{
-outline: 1px solid var(--blueK);
--webkit-appearance:none;
+input:focus {
+  outline: 1px solid var(--blueK);
+  -webkit-appearance: none;
 }
 
 .form-control:focus {
   border-color: var(--primaryK) !important;
   box-shadow: 0 0 0 0.2rem var(--primaryK);
-} 
+}
 
-.btn-primary{
+.btn-primary {
   background-color: var(--primaryK);
   border-radius: 5px;
   font: 16px right;
@@ -128,13 +136,13 @@ outline: 1px solid var(--blueK);
   border: 2px solid var(--primaryK) !important;
   height: 42px;
 }
-.btn-primary:hover{
+.btn-primary:hover {
   background-color: white;
   border: 2px solid var(--primaryK) !important;
   color: var(--primaryK);
 }
 
-.btn-send{
+.btn-send {
   background-color: var(--primaryK);
   border-radius: 5px;
   font: 16px right;
@@ -145,13 +153,13 @@ outline: 1px solid var(--blueK);
   align-items: center;
   justify-content: center;
 }
-.btn-send:hover{
+.btn-send:hover {
   background-color: white;
   border: 2px solid var(--primaryK) !important;
   color: var(--primaryK);
 }
 
-.btn-secondary{
+.btn-secondary {
   background-color: var(--secondaryK);
   border-radius: 5px;
   font: 24px right;
@@ -161,13 +169,13 @@ outline: 1px solid var(--blueK);
   padding-left: 30px;
   padding-right: 30px;
 }
-.btn-secondary:hover{
+.btn-secondary:hover {
   background-color: white;
   border: 2px solid var(--secondaryK) !important;
   color: var(--secondaryK);
 }
 
-.btn-blue{
+.btn-blue {
   background-color: var(--blueK);
   border-radius: 5px;
   font: 24px right;
@@ -177,14 +185,14 @@ outline: 1px solid var(--blueK);
   padding-left: 30px;
   padding-right: 30px;
 }
-.btn-blue:hover{
+.btn-blue:hover {
   background-color: white;
   border: 2px solid var(--blueK) !important;
   color: var(--blueK);
 }
 
-.btn-golden{
-  background-color: #F5A343;
+.btn-golden {
+  background-color: #f5a343;
   border-radius: 5px;
   font: 24px right;
   color: white;
@@ -193,13 +201,13 @@ outline: 1px solid var(--blueK);
   padding-left: 30px;
   padding-right: 30px;
 }
-.btn-golden:hover{
+.btn-golden:hover {
   background-color: white;
-  border: 2px solid #F5A343 !important;
-  color: #F5A343;
+  border: 2px solid #f5a343 !important;
+  color: #f5a343;
 }
 
-.btn-chat{
+.btn-chat {
   background-color: var(--secondaryK);
   border-radius: 0px 20px 0px 20px;
   font: 12px poppinsMd;
@@ -211,19 +219,17 @@ outline: 1px solid var(--blueK);
   display: flex;
   align-items: center;
 }
-.btn-chat:hover{
+.btn-chat:hover {
   background-color: white;
   border: 2px solid var(--secondaryK) !important;
   color: var(--secondaryK);
 }
 
-
-label{
+label {
   font-weight: 700;
 }
 
-
-.btn-primary-outline{
+.btn-primary-outline {
   background-color: transparent;
   border-radius: 5px;
   font: 16px right;
@@ -231,7 +237,7 @@ label{
   border: 2px solid var(--primaryK) !important;
   height: 42px;
 }
-.btn-primary-outline:hover{
+.btn-primary-outline:hover {
   background-color: var(--primaryK);
   border: 2px solid var(--primaryK) !important;
   color: white;

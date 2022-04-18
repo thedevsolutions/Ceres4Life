@@ -69,12 +69,19 @@ export default function Signup() {
                       <Option value="patient">Patient</Option>
                     </Select>
                   </div>
-                  <div className="my-5">
+
+                  <div className="my-3">
                     <Link to="/dashboard">
                       <button class="btn btn-primary w-100">
                         Create Account
                       </button>
                     </Link>
+                  </div>
+                  <div class="text-center">
+                    <label>
+                      Already have an account?
+                      <Link to="/login">Login</Link>
+                    </label>
                   </div>
                 </div>
               </div>

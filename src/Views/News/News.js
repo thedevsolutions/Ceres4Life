@@ -1,21 +1,21 @@
 import React from "react";
 import BlogsNews from "../../Components/BlogsNews";
+import Footer from "../../Components/Footer";
+import Header from "../../Components/Header";
 
 export default function News() {
-
-    React.useEffect(() => {
-        window.scrollTo(0, 0);
-      }, []);
+  React.useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <>
+      <Header />
       <div className="container-fluid px-0">
         <div className="row mx-0">
           <div className="col-lg-12 px-0">
             <div className="news">
               <div className="news-content">
-                <h6>
-                  Our News & Blogs
-                </h6>
+                <h6>Our News & Blogs</h6>
                 <p>
                   We would love to hear from you and help you resolve any
                   challenges.
@@ -25,9 +25,10 @@ export default function News() {
           </div>
         </div>
         <div className="row justify-content-center footer py-5 mx-0">
-         <BlogsNews/>
+          <BlogsNews />
         </div>
       </div>
+      <Footer />
     </>
   );
 }

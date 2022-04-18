@@ -24,7 +24,7 @@ export default function Login() {
               </div>
               <div className="row mt-5">
                 <div className="col-lg-12">
-                <label>Email Address</label>
+                  <label>Email Address</label>
                   <div class="form-group">
                     <input
                       type="email"
@@ -33,7 +33,7 @@ export default function Login() {
                     />
                   </div>
                   <div class="form-group">
-                  <label>Password</label>
+                    <label>Password</label>
                     <input
                       type="password"
                       class="form-control"
@@ -41,7 +41,7 @@ export default function Login() {
                     />
                   </div>
                   <div className="as">
-                  <label>Login As</label>
+                    <label>Login As</label>
                     <Select
                       defaultValue="Login as"
                       size="large"
@@ -56,10 +56,16 @@ export default function Login() {
                   <p className="text-right">
                     <Link to="/forgot">Forgot Password?</Link>
                   </p>
-                  <div className="my-5">
+                  <div className="my-3">
                     <Link to="/dashboard">
-                      <button class="btn btn-primary w-100">Login</button>
+                      <button className="btn btn-primary w-100">Login</button>
                     </Link>
+                  </div>
+                  <div class="text-center">
+                    <label>
+                      Don't have a account?
+                      <Link to="/Signup">SignUp</Link>
+                    </label>
                   </div>
                 </div>
               </div>

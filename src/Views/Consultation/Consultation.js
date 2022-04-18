@@ -1,19 +1,21 @@
 import React from "react";
-import {  Select } from "antd";
+import { Select } from "antd";
+import Header from "../../Components/Header";
+import Footer from "../../Components/Footer";
 const { Option } = Select;
 
 export default function Consultation() {
+  React.useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
-    React.useEffect(() => {
-        window.scrollTo(0, 0);
-      }, []);
+  function handleChange(value) {
+    console.log(`selected ${value}`);
+  }
 
-    function handleChange(value) {
-        console.log(`selected ${value}`);
-      }
-      
   return (
     <>
+      <Header />
       <div className="container-fluid px-0">
         <div className="row mx-0">
           <div className="col-lg-12 px-0">
@@ -35,24 +37,28 @@ export default function Consultation() {
           <div className="col-lg-5">
             <div className="contact-form">
               <div className="text-center">
-              <h6>CONSULTATION</h6>
-              <p>We will reply to you as soon as possible.</p>
+                <h6>CONSULTATION</h6>
+                <p>We will reply to you as soon as possible.</p>
               </div>
               <div className="form py-4">
-                <div class="form-group">
-                  <input type="text" class="form-control" placeholder="Name" />
+                <div className="form-group">
+                  <input
+                    type="text"
+                    className="form-control"
+                    placeholder="Name"
+                  />
                 </div>
-                <div class="form-group">
+                <div className="form-group">
                   <input
                     type="email"
-                    class="form-control"
+                    className="form-control"
                     placeholder="Email Address"
                   />
                 </div>
-                <div class="form-group">
+                <div className="form-group">
                   <input
                     type="number"
-                    class="form-control"
+                    className="form-control"
                     placeholder="Phone No."
                   />
                 </div>
@@ -67,19 +73,20 @@ export default function Consultation() {
                   <Option value="postnatal">Post-natal</Option>
                 </Select>
 
-                <div class="form-group">
+                <div className="form-group">
                   <textarea
-                    class="form-control"
+                    className="form-control"
                     placeholder="Describe your concern"
-                    style={{height:"150px"}}
+                    style={{ height: "150px" }}
                   ></textarea>
                 </div>
-                <button class="btn btn-secondary w-100 my-5">Submit</button>
+                <button className="btn btn-secondary w-100 my-5">Submit</button>
               </div>
             </div>
           </div>
         </div>
       </div>
+      <Footer />
     </>
   );
 }

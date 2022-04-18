@@ -1,13 +1,15 @@
 import React from "react";
+import Footer from "../../Components/Footer";
+import Header from "../../Components/Header";
 
 export default function ContactUs() {
-
-    React.useEffect(() => {
-        window.scrollTo(0, 0);
-      }, []);
+  React.useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <>
+      <Header />
       <div className="container-fluid px-0">
         <div className="row mx-0">
           <div className="col-lg-12 px-0">
@@ -26,6 +28,7 @@ export default function ContactUs() {
           </div>
         </div>
       </div>
+      <Footer />
     </>
   );
 }

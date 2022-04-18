@@ -74,9 +74,9 @@ export default function Header() {
               Login
             </Link>
           </li>
-          <li class="nav-item">
+          {/* <li class="nav-item">
             <select
-              class="language"
+              class="language "
               id="exampleFormControlSelect1"
               // onChange={change}
               // value={lang}
@@ -91,7 +91,7 @@ export default function Header() {
                 Spanish
               </option>
             </select>
-          </li>
+          </li> */}
         </ul>
       </div>
     </nav>

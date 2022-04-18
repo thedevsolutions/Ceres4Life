@@ -1,14 +1,16 @@
 import React from "react";
 import Committed from "../../Components/Committed";
 import CommunityForum from "../../Components/CommunityForum";
+import Footer from "../../Components/Footer";
+import Header from "../../Components/Header";
 
 export default function Prenatal() {
-
   React.useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
   return (
     <>
+      <Header />
       <div className="container-fluid px-0">
         <div className="row mx-0">
           <div className="col-lg-12 px-0">
@@ -85,14 +87,18 @@ export default function Prenatal() {
                       <li>Your family’ health history.</li>
                       <li>Your reproductive health.</li>
                       <li>
-                        Work with your health care provider to develop your<br/>
+                        Work with your health care provider to develop your
+                        <br />
                         reproductive life plan. There are also online tools
-                        available to <br/>help.
+                        available to <br />
+                        help.
                       </li>
                       <li>
                         If you are sexually active and not planning a pregnancy,
-                        see<br/> your health care provider about the birth control
-                        method best <br/>for you.
+                        see
+                        <br /> your health care provider about the birth control
+                        method best <br />
+                        for you.
                       </li>
                     </ul>
                   </div>
@@ -110,8 +116,9 @@ export default function Prenatal() {
           </div>
         </div>
       </div>
-      <Committed/>
-      <CommunityForum/>
+      <Committed />
+      <CommunityForum />
+      <Footer />
     </>
   );
 }

@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 // import { Link } from "react-router-dom";
 import { Modal, Select } from "antd";
 const { Option } = Select;
@@ -67,16 +68,18 @@ export default function DoForYou() {
             <div className="d-block d-md-flex py-5 pre-post">
               <div className="mb-3">
                 {/* <Link to="/prenatal"> */}
-                  <div className="card left-card">
-                    <div className="text-center pt-4">
-                      <img
-                        src="/images/dna.svg"
-                        alt="left-card"
-                        height={"80px"}
-                      />
-                      <p className="card-text" onClick={showModalO}>I'm Pregnant</p>
-                    </div>
+                <div className="card left-card">
+                  <div className="text-center pt-4">
+                    <img
+                      src="/images/dna.svg"
+                      alt="left-card"
+                      height={"80px"}
+                    />
+                    <p className="card-text" onClick={showModalO}>
+                      I'm Pregnant
+                    </p>
                   </div>
+                </div>
                 {/* </Link> */}
                 {/* <div className="text-center pt-5">
                 <button className="btn btn-secondary w-100" onClick={showModalO}>
@@ -125,19 +128,15 @@ export default function DoForYou() {
           centered
         >
           <div className="modal-content">
-            <h5 className="text-center mb-4">I am</h5>
-            <Select
-              defaultValue="New Patient"
-              size="large"
-              style={{ width: "100%" }}
-              onChange={handleChange}
-              className="mb-3"
-            >
-              <Option value="new">New Patient</Option>
-              <Option value="existing">Existing Patient</Option>
-            </Select>
-
-            <button class="btn btn-primary w-100">SUBMIT</button>
+            <h5 className="text-left mb-4">You're</h5>
+            <div className="d-flex align-items-center justify-content-between">
+              <Link to="/login" className="btn btn-primary text-white">
+                New Patient
+              </Link>
+              <Link to="/clandely" className="btn btn-primary text-white">
+                Existing Patient
+              </Link>
+            </div>
             <div className="text-center py-3">
               <a href="#/" onClick={handleCancel}>
                 Cancel
@@ -153,19 +152,18 @@ export default function DoForYou() {
           centered
         >
           <div className="modal-content">
-            <h5 className="text-center mb-4">I am</h5>
-            <Select
-              defaultValue="New Patient"
-              size="large"
-              style={{ width: "100%" }}
-              onChange={handleChange}
-              className="mb-3"
-            >
-              <Option value="new">New Patient</Option>
-              <Option value="existing">Existing Patient</Option>
-            </Select>
+            <h5 className="text-left mb-4">You're</h5>
 
-            <button class="btn btn-primary w-100">SUBMIT</button>
+            <div className="d-flex align-items-center justify-content-between">
+              <Link to="/login" className="btn btn-primary text-white">
+                New Patient
+              </Link>
+              <Link to="/clandely" className="btn btn-primary text-white">
+                Existing Patient
+              </Link>
+            </div>
+
+            {/* <button class="btn btn-primary w-100">SUBMIT</button> */}
             <div className="text-center py-3">
               <a href="#/" onClick={handleOCancel}>
                 Cancel
@@ -173,8 +171,6 @@ export default function DoForYou() {
             </div>
           </div>
         </Modal>
-
-
       </div>
     </div>
   );

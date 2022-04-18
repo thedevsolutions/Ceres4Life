@@ -1,14 +1,16 @@
 import React from "react";
 import Committed from "../../Components/Committed";
 import CommunityForum from "../../Components/CommunityForum";
+import Footer from "../../Components/Footer";
+import Header from "../../Components/Header";
 
 export default function Postnatal() {
-
   React.useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
   return (
     <>
+      <Header />
       <div className="container-fluid px-0">
         <div className="row mx-0">
           <div className="col-lg-12 px-0">
@@ -43,10 +45,22 @@ export default function Postnatal() {
               <div>
                 <h6>Postnatal</h6>
                 <p>
-                Talk to your health care provider if you want to delay having children until later in your life. It becomes < br/> more difficult for many women and men 35 years and over to achieve a pregnancy. Women 35 years and< br/> over may have a more difficult pregnancy and birth. They may also have greater risks of medical< br/> problems during pregnancy. The baby may also be born with health problems. The quality of a man’s< br/> sperm also declines in his mid-thirties. His health problems may also increase. Even though there are< br/> fertility treatments available to assist with getting pregnant, such as in vitro fertilization, the success of< br/> treatment also declines with age.
-                <br/>
-                Women who are breastfeeding require additional food and
-                  should drink sufficient clean
+                  Talk to your health care provider if you want to delay having
+                  children until later in your life. It becomes <br /> more
+                  difficult for many women and men 35 years and over to achieve
+                  a pregnancy. Women 35 years and
+                  <br /> over may have a more difficult pregnancy and birth.
+                  They may also have greater risks of medical
+                  <br /> problems during pregnancy. The baby may also be born
+                  with health problems. The quality of a man’s
+                  <br /> sperm also declines in his mid-thirties. His health
+                  problems may also increase. Even though there are
+                  <br /> fertility treatments available to assist with getting
+                  pregnant, such as in vitro fertilization, the success of
+                  <br /> treatment also declines with age.
+                  <br />
+                  Women who are breastfeeding require additional food and should
+                  drink sufficient clean
                   <br /> water. You should spend more time on nutrition
                   counselling with women who are very thin
                   <br /> and with adolescents who may need additional
@@ -90,6 +104,7 @@ export default function Postnatal() {
       </div>
       <Committed />
       <CommunityForum />
+      <Footer />
     </>
   );
 }

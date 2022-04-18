@@ -6,17 +6,21 @@ import Help from "../../Components/Help";
 import Committed from "../../Components/Committed";
 import ChatBot from "../../Components/ChatBot";
 import BlogsNews from "../../Components/BlogsNews";
+import Header from "../../Components/Header";
+import Footer from "../../Components/Footer";
 
 export default function Home() {
   return (
     <div className="bg-sea">
+      <Header />
       <ChatBot />
       <Hero />
       <DoForYou />
       <Help />
       <Committed />
       <CommunityForum />
-      <BlogsNews/>
+      <BlogsNews />
+      <Footer />
     </div>
   );
 }
