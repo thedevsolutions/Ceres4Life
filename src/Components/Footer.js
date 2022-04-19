@@ -1,15 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import {  Select } from "antd";
-const { Option } = Select;
-
+// import { Select } from "antd";
+// const { Option } = Select;
 
 export default function Footer() {
-
-
-  function handleChange(value) {
-    console.log(`selected ${value}`);
-  }
+  // function handleChange(value) {
+  //   console.log(`selected ${value}`);
+  // }
 
   return (
     <div className="container-fluid">
@@ -79,7 +76,7 @@ export default function Footer() {
                   placeholder="Phone No."
                 />
               </div>
-              <Select
+              {/* <Select
                 defaultValue="I am"
                 size="large"
                 style={{ width: "100%" }}
@@ -88,7 +85,7 @@ export default function Footer() {
               >
                 <Option value="prenatal">Pre-natal</Option>
                 <Option value="postnatal">Post-natal</Option>
-              </Select>
+              </Select> */}
 
               <div class="form-group">
                 <textarea
@@ -97,7 +94,7 @@ export default function Footer() {
                   style={{ height: "150px" }}
                 ></textarea>
               </div>
-              <button class="btn btn-secondary w-100 my-5">Submit</button>
+              <button class="btn btn-secondary w-100 my-2">Submit</button>
             </div>
           </div>
         </div>

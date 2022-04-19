@@ -20,6 +20,10 @@ import PADoctors from "./Dashboard/PatientDashboard/PatientContents/PADoctors";
 import PDrMessage from "./Dashboard/PatientDashboard/PatientContents/PDrMessage";
 import PHealth from "./Dashboard/PatientDashboard/PatientContents/PHealth";
 import Clandely from "./Components/Clandely";
+import PatientDetail from "./Dashboard/PatientDashboard/AddDetail";
+import DoctorDetail from "./Dashboard/DoctorDashboard/AddDetail";
+import DUserProfile from "./Dashboard/DoctorDashboard/DoctorContents/DUserProfile";
+import DConsultation from "./Dashboard/DoctorDashboard/DoctorContents/DConsultation";
 export default function Routes() {
   return (
     <Switch>
@@ -30,24 +34,28 @@ export default function Routes() {
       {/* <Route path="/dashboard" component={Dashboard} /> */}
       {/* <Header /> */}
       <Route exact path="/" component={Home} />
-      <Route exact path="/consultation" component={Consultation} />
-      <Route exact path="/prenatal" component={Prenatal} />
-      <Route exact path="/postnatal" component={Postnatal} />
-      <Route exact path="/contact" component={ContactUs} />
-      <Route exact path="/news" component={News} />
+      <Route path="/consultation" component={Consultation} />
+      <Route path="/prenatal" component={Prenatal} />
+      <Route path="/postnatal" component={Postnatal} />
+      <Route path="/contact" component={ContactUs} />
+      <Route path="/news" component={News} />
       {/* //patient routes */}
-      <Route path="/dashboard" component={PUserProfile} />
-      <Route exact path="/pconsultations" component={PConsultation} />
-      <Route exact path="/medications" component={PMedications} />
-      <Route exact path="/reports" component={PReports} />
-      <Route exact path="/allergies" component={PAllergies} />
-      <Route exact path="/immunizations" component={PImmunizations} />
-      <Route exact path="/available-doctors" component={PADoctors} />
-      <Route exact path="/doctor-message" component={PDrMessage} />
-      <Route exact path="/rhm" component={PHealth} />
+      <Route exact path="/dashboard" component={PUserProfile} />
+      <Route path="/pconsultations" component={PConsultation} />
+      <Route path="/medications" component={PMedications} />
+      <Route path="/reports" component={PReports} />
+      <Route path="/allergies" component={PAllergies} />
+      <Route path="/immunizations" component={PImmunizations} />
+      <Route path="/available-doctors" component={PADoctors} />
+      <Route path="/doctor-message" component={PDrMessage} />
+      <Route path="/rhm" component={PHealth} />
 
-      {/* <Footer /> */}
-      <Route exact path="/clandely" component={Clandely} />
+      <Route path="/clandely" component={Clandely} />
+      <Route path="/add-detail" component={PatientDetail} />
+      {/* Doctor routes */}
+      <Route exact path="/dr-dashboard" component={DUserProfile} />
+      <Route path="/add-Drdetail" component={DoctorDetail} />
+      <Route path="/dr-consultations" component={DConsultation} />
     </Switch>
   );
 }

@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Form, Radio, Input, Space, InputNumber } from "antd";
+import { RiImageAddFill } from "react-icons/ri";
 // import MainLayout from "../Layout";
 import MainLayout from "../Layout";
 
@@ -21,6 +22,13 @@ export default function PUserProfile() {
     <div>
       <MainLayout>
         <Form layout="vertical">
+          <div className="row justify-content-center">
+            <div className="col-lg-12 d-flex justify-content-center align-items-center">
+              <div className="image_div">
+                <RiImageAddFill fontSize={"50px"} />
+              </div>
+            </div>
+          </div>
           <div className="row justify-content-around">
             <div className="col-lg-5">
               <div className="d-block d-md-flex">

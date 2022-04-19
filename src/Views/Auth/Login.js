@@ -1,11 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { Select } from "antd";
 const { Option } = Select;
 
 export default function Login() {
+  const [loginAs, setLoginAs] = useState("");
   function handleChange(value) {
-    console.log(`selected ${value}`);
+    // console.log(`selected ${value}`);
+    setLoginAs(value);
+    // console.log(loginAs, "state");
   }
   return (
     <div className="container-fluid">
@@ -57,9 +60,15 @@ export default function Login() {
                     <Link to="/forgot">Forgot Password?</Link>
                   </p>
                   <div className="my-3">
-                    <Link to="/dashboard">
-                      <button className="btn btn-primary w-100">Login</button>
-                    </Link>
+                    {loginAs === "provider" ? (
+                      <Link to="/add-Drdetail">
+                        <button className="btn btn-primary w-100">Login</button>
+                      </Link>
+                    ) : (
+                      <Link to="/add-detail">
+                        <button className="btn btn-primary w-100">Login</button>
+                      </Link>
+                    )}
                   </div>
                   <div class="text-center">
                     <label>
