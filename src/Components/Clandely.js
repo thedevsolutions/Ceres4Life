@@ -1,5 +1,5 @@
 import { CalendlyEventListener, InlineWidget } from "react-calendly";
-import { useRef, useState } from "react";
+import { useState } from "react";
 
 export default function Clandely() {
   const [isDoneScheduling, setDoneScheduling] = useState(false);

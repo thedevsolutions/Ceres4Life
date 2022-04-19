@@ -1,14 +1,9 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 // import { Link } from "react-router-dom";
-import { Modal, Select } from "antd";
-const { Option } = Select;
+import { Modal } from "antd";
 
 export default function DoForYou() {
-  function handleChange(value) {
-    console.log(`selected ${value}`);
-  }
-
   const [isModalVisible, setIsModalVisible] = useState(false);
 
   const showModal = () => {
