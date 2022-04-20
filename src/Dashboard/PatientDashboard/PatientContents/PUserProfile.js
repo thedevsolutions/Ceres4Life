@@ -7,6 +7,20 @@ import MainLayout from "../Layout";
 export default function PUserProfile() {
   const [radio, setRadio] = useState(1);
 
+  const [selectedFile, setSelectedFile] = useState();
+  const [previewImg, setPreviewImg] = useState("");
+
+  const changeHandler = (e) => {
+    setSelectedFile(e.target.files[0]);
+    if (e.target.files.length !== 0) {
+      setPreviewImg(URL.createObjectURL(e.target.files[0]), "Img");
+    }
+    console.log(selectedFile);
+  };
+
+  function uploadImage() {
+    document.getElementById("selectFile").click();
+  }
   const onChange = (e) => {
     console.log("radio checked", e.target.value);
     setRadio({
@@ -22,14 +36,30 @@ export default function PUserProfile() {
     <div>
       <MainLayout>
         <Form layout="vertical">
-          <div className="row justify-content-center">
-            <div className="col-lg-12 d-flex justify-content-center align-items-center">
-              <div className="image_div">
-                <RiImageAddFill fontSize={"50px"} />
-              </div>
+          <div className="col-lg-12 d-flex justify-content-center align-items-center">
+            <input
+              type="file"
+              name="file"
+              className="d-none"
+              id="selectFile"
+              onChange={changeHandler}
+            />
+            <div></div>
+            <div className="d-flex justify-content-center uploadimg">
+              <RiImageAddFill
+                fontSize={"50px"}
+                onClick={uploadImage}
+                className={previewImg === "" ? "" : "d-none"}
+              />
+              <img
+                src={previewImg}
+                alt="profile"
+                className={previewImg === "" ? "d-none" : ""}
+              />
             </div>
           </div>
-          <div className="row justify-content-around">
+
+          <div className="row justify-content-around mt-3">
             <div className="col-lg-5">
               <div className="d-block d-md-flex">
                 <Form.Item label="First Name" className="w-50">

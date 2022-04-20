@@ -9,6 +9,9 @@ export default function Help() {
         </div>
         <div className="col-lg-12">
           <div className="community-text py-4">
+            <div className=" d-flex align-items-center justify-content-start ">
+              <img src="/images/Logo.svg" alt="logo" height={"100px"} />
+            </div>
             <h6>What Help do I get</h6>
             <p>
               When you connect with your care team, a triage nurse will assess

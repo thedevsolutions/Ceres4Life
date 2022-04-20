@@ -14,7 +14,7 @@ const menu = (
 export default function DHeader() {
   return (
     <div className="d-flex align-items-center justify-content-between h-100">
-     <h6 className="d-welcome">Welcome</h6>
+      <h6 className="d-welcome">Welcome</h6>
 
       <Dropdown overlay={menu}>
         <a

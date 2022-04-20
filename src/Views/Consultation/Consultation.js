@@ -37,6 +37,9 @@ export default function Consultation() {
           <div className="col-lg-5">
             <div className="contact-form">
               <div className="text-center">
+                <div className=" d-flex align-items-center justify-content-center ">
+                  <img src="/images/Logo.svg" alt="logo" height={"100px"} />
+                </div>
                 <h6>CONSULTATION</h6>
                 <p>We will reply to you as soon as possible.</p>
               </div>

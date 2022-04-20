@@ -1,5 +1,6 @@
 import { CalendlyEventListener, InlineWidget } from "react-calendly";
 import { useState } from "react";
+import "../calendify.css";
 
 export default function Clandely() {
   const [isDoneScheduling, setDoneScheduling] = useState(false);
@@ -32,9 +33,9 @@ export default function Clandely() {
   // });
 
   function getCalendlyHeightToEnsureNoCrop() {
-    if (!isTimeSelected) return { height: 600 };
-    if (isDoneScheduling) return { height: 450 };
-    return { height: 1060 };
+    if (!isTimeSelected) return { height: 650 };
+    if (isDoneScheduling) return { height: 1080 };
+    return { height: 650 };
   }
 
   function handleDateAndTimeSelected() {
@@ -46,18 +47,20 @@ export default function Clandely() {
   }
 
   return (
-    <CalendlyEventListener
-      onDateAndTimeSelected={handleDateAndTimeSelected}
-      onEventScheduled={handleEventScheduled}
-    >
-      <InlineWidget
-        url={"https://calendly.com/bhongmanee/test-a-calendly-intake-form"}
-        // pageSettings={pageSettings.current}
-        // prefill={prefill.current}
-        pageSettings={pageSettings}
-        prefill={prefill}
-        styles={getCalendlyHeightToEnsureNoCrop()}
-      />
-    </CalendlyEventListener>
+    <div className="calenderContainer" style={{ overflow: "hidden" }}>
+      <CalendlyEventListener
+        onDateAndTimeSelected={handleDateAndTimeSelected}
+        onEventScheduled={handleEventScheduled}
+      >
+        <InlineWidget
+          url={"https://calendly.com/bhongmanee/test-a-calendly-intake-form"}
+          // pageSettings={pageSettings.current}
+          // prefill={prefill.current}
+          pageSettings={pageSettings}
+          prefill={prefill}
+          styles={getCalendlyHeightToEnsureNoCrop()}
+        />
+      </CalendlyEventListener>
+    </div>
   );
 }

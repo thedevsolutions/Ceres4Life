@@ -2,22 +2,6 @@
   background-color: var(--primaryK) !important;
   color: white !important;
 }
-/* ////recent work */
-.nav-link {
-  width: 100%;
-  padding: 20px 0;
-  overflow: hidden;
-  flex-grow: 1;
-  cursor: pointer;
-  position: relative;
-  text-decoration: none;
-}
-
-/* .nav-link:hover,
-.nav-link:active {
-  background: red;
-} */
-
 .profile {
   height: 40px;
   width: 40px;
@@ -401,6 +385,18 @@
 .msg-recieve p {
   font: 16px poppins;
 }
+
+.uploadimg {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+}
+.uploadimg img {
+  border-radius: 50%;
+  height: 100%;
+  width: 100%;
+}
+
 .msg-send p {
   font: 16px poppins;
 }

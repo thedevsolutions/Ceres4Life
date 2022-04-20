@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import "../../dashboard.css";
-import DHeader from "../PatientDashboard/DHeader";
+import DHeader from "./DHeader";
 import { Layout, Menu } from "antd";
 
 import {
@@ -81,7 +81,7 @@ export default function MainLayout(props) {
             </Menu.Item>
 
             <Menu.Item key="5" icon={<ExperimentOutlined />}>
-              <Link to="/dr-emote">Remote Monitoring</Link>
+              <Link to="/dr-remote">Remote Monitoring</Link>
             </Menu.Item>
           </Menu>
         </Sider>

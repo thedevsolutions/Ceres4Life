@@ -7,7 +7,7 @@ import MainLayout from "../Layout";
 
 const { Header, Sider, Content } = Layout;
 
-export default function PDrMessage() {
+export default function DrChat() {
   return (
     <>
       <MainLayout>

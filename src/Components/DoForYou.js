@@ -41,6 +41,10 @@ export default function DoForYou() {
           </div>
           <div className="col-lg-12">
             <div className="community-text pb-4">
+              <div className=" d-flex align-items-center justify-content-end ">
+                <img src="/images/Logo.svg" alt="logo" height={"100px"} />
+              </div>
+
               <h6>What we Do for you</h6>
               <p>
                 Pregnancy or being a new Mom is complicated and joyful. We want

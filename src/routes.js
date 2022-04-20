@@ -24,6 +24,9 @@ import PatientDetail from "./Dashboard/PatientDashboard/AddDetail";
 import DoctorDetail from "./Dashboard/DoctorDashboard/AddDetail";
 import DUserProfile from "./Dashboard/DoctorDashboard/DoctorContents/DUserProfile";
 import DConsultation from "./Dashboard/DoctorDashboard/DoctorContents/DConsultation";
+import Notepad from "./Dashboard/DoctorDashboard/DoctorContents/Notepad";
+import DrChat from "./Dashboard/DoctorDashboard/DoctorContents/chat";
+import DRemote from "./Dashboard/DoctorDashboard/DoctorContents/DRemote";
 export default function Routes() {
   return (
     <Switch>
@@ -56,6 +59,9 @@ export default function Routes() {
       <Route exact path="/dr-dashboard" component={DUserProfile} />
       <Route path="/add-Drdetail" component={DoctorDetail} />
       <Route path="/dr-consultations" component={DConsultation} />
+      <Route path="/dr-notepad" component={Notepad} />
+      <Route path="/dr-chat" component={DrChat} />
+      <Route path="/dr-remote" component={DRemote} />
     </Switch>
   );
 }
