@@ -71,7 +71,7 @@ export default function Signup() {
                   </div>
 
                   <div className="my-3">
-                    <Link to="/dashboard">
+                    <Link to="/login">
                       <button class="btn btn-primary w-100">
                         Create Account
                       </button>

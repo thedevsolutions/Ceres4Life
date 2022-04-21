@@ -129,10 +129,16 @@ export default function DoForYou() {
           <div className="modal-content">
             <h5 className="text-left mb-4">You're</h5>
             <div className="d-flex align-items-center justify-content-between">
-              <Link to="/login" className="btn btn-primary text-white">
+              <Link
+                to="/login"
+                className="btn btn-primary text-white d-flex align-items-center"
+              >
                 New Patient
               </Link>
-              <Link to="/clandely" className="btn btn-primary text-white">
+              <Link
+                to="/clandely"
+                className="btn btn-primary text-white d-flex align-items-center"
+              >
                 Existing Patient
               </Link>
             </div>
@@ -154,10 +160,16 @@ export default function DoForYou() {
             <h5 className="text-left mb-4">You're</h5>
 
             <div className="d-flex align-items-center justify-content-between">
-              <Link to="/login" className="btn btn-primary text-white">
+              <Link
+                to="/login"
+                className="btn btn-primary text-white d-flex align-items-center"
+              >
                 New Patient
               </Link>
-              <Link to="/clandely" className="btn btn-primary text-white">
+              <Link
+                to="/clandely"
+                className="btn btn-primary text-white d-flex align-items-center"
+              >
                 Existing Patient
               </Link>
             </div>

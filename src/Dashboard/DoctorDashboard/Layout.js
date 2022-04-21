@@ -46,7 +46,7 @@ export default function MainLayout(props) {
           className="bg-white"
         >
           <div className="text-center">
-            <Link to="/dashboard">
+            <Link to="/dr-dashboard">
               <img
                 src="/images/Logo.svg"
                 alt="logo"
@@ -54,7 +54,7 @@ export default function MainLayout(props) {
                 className={sideCollapsed === true ? "d-none" : ""}
               />
             </Link>
-            <Link to="/dashboard">
+            <Link to="/dr-dashboard">
               <img
                 src="/images/s-logo.svg"
                 alt="logo"

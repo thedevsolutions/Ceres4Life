@@ -2,7 +2,7 @@ import React from "react";
 import { VscSmiley } from "react-icons/vsc";
 import { ImAttachment } from "react-icons/im";
 import { FiSend } from "react-icons/fi";
-import { Input } from 'antd';
+import { Input } from "antd";
 
 export default function ChatContent() {
   return (
@@ -67,25 +67,25 @@ export default function ChatContent() {
             </div>
           </div>
         </div>
-        <hr className="ml-5"/>
+        <hr className="ml-5" />
         <div className="ml-5 mt-4">
           <div className="d-flex align-items-center justify-content-around">
-          <div className="d-flex align-items-center">
-          <div className="emojis">
-              <VscSmiley />
+            <div className="d-flex align-items-center">
+              <div className="emojis">
+                <VscSmiley />
+              </div>
+              <div className="type-msg ml-3">
+                <Input placeholder="Type your message..." />
+              </div>
+              <div className="emojis mx-3">
+                <ImAttachment />
+              </div>
             </div>
-            <div className="type-msg ml-3">
-            <Input placeholder="Type your message..." />
+            <div className="d-flex align-items-center justify-content-center">
+              <button type="button" className="btn btn-send">
+                <FiSend />
+              </button>
             </div>
-            <div className="emojis ml-3">
-              <ImAttachment />
-            </div>
-          </div>
-         <div className="d-flex align-items-center">
-            <button type="button" className="btn btn-send px-5">
-              <FiSend />
-            </button>
-         </div>
           </div>
         </div>
       </div>
